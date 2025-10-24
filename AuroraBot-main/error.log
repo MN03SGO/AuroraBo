@@ -1,0 +1,22 @@
+
+    ╔═══════════════════════════════════════════╗
+    ║                                           ║
+    ║             A U R A  -  I A               ║
+    ║                                           ║
+    ║      Asistente Inteligente con Voz        ║
+    ║                                           ║
+    ╚═══════════════════════════════════════════╝
+    
+🔍 Verificando dependencias...
+2025-10-22 20:19:25,949 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+✅ Dependencias OK
+
+🔍 Verificando configuración...
+2025-10-22 20:19:25,954 - __main__ - INFO - ✅ Configuración de API verificada
+✅ Configuración OK
+
+2025-10-22 20:19:25,954 - __main__ - INFO - Iniciando interfaz gráfica
+🖥️  Iniciando interfaz gráfica...
+2025-10-22 20:19:34,200 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:19:35,443 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:19:36,805 - src.cerebro_ia - INFO - Respuesta generada exitosamente

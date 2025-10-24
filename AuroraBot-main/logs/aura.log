@@ -1,0 +1,358 @@
+2025-10-21 09:54:04,425 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-21 09:54:04,435 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-21 09:54:04,435 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-21 09:54:04,463 - __main__ - ERROR - Error fatal: expected an indented block after function definition on line 465 (interfaz.py, line 466)
+Traceback (most recent call last):
+  File "/home/pysho/aura-assistant/run.py", line 202, in main
+    modo_interfaz()
+  File "/home/pysho/aura-assistant/run.py", line 113, in modo_interfaz
+    from src.interfaz import main
+  File "/home/pysho/aura-assistant/src/interfaz.py", line 466
+    #
+     ^
+IndentationError: expected an indented block after function definition on line 465
+2025-10-22 19:43:21,216 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 19:43:21,222 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 19:43:21,222 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 19:43:21,241 - __main__ - ERROR - Error fatal: expected an indented block after function definition on line 465 (interfaz.py, line 466)
+Traceback (most recent call last):
+  File "/home/pysho/aura-assistant/run.py", line 202, in main
+    modo_interfaz()
+  File "/home/pysho/aura-assistant/run.py", line 113, in modo_interfaz
+    from src.interfaz import main
+  File "/home/pysho/aura-assistant/src/interfaz.py", line 466
+    #
+     ^
+IndentationError: expected an indented block after function definition on line 465
+2025-10-22 19:46:39,251 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 19:46:39,257 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 19:46:39,257 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 19:46:39,275 - __main__ - ERROR - Error fatal: expected an indented block after function definition on line 465 (interfaz.py, line 466)
+Traceback (most recent call last):
+  File "/home/pysho/aura-assistant/run.py", line 202, in main
+    modo_interfaz()
+  File "/home/pysho/aura-assistant/run.py", line 113, in modo_interfaz
+    from src.interfaz import main
+  File "/home/pysho/aura-assistant/src/interfaz.py", line 466
+    #
+     ^
+IndentationError: expected an indented block after function definition on line 465
+2025-10-22 19:47:08,097 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 19:47:08,106 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 19:47:08,106 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 19:47:38,645 - src.cerebro_ia - INFO - Generando respuesta para: cuál es la capital de francia...
+2025-10-22 19:47:40,071 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 19:47:41,238 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 19:50:27,259 - src.cerebro_ia - INFO - Generando respuesta para: como se llama el cantante español que murio hace p...
+2025-10-22 19:50:27,811 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 19:50:31,090 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 19:52:09,858 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 19:52:09,863 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 19:52:09,863 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 19:52:27,942 - src.cerebro_ia - INFO - Generando respuesta para: cómo se llama jungkook...
+2025-10-22 19:52:32,646 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 19:52:37,165 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 19:58:58,545 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 19:58:59,387 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 19:59:00,000 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:11:55,277 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:11:55,284 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:11:55,284 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:12:01,139 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:12:02,630 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:12:10,915 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:12:36,562 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:12:37,138 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-22 20:12:37,140 - src.cerebro_ia - ERROR - Error al generar respuesta: Error al generar respuesta: Error code: 401 - {'error': {'message': 'User not found.', 'code': 401}}
+2025-10-22 20:12:52,462 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:12:52,467 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:12:52,467 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:12:57,275 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:12:58,235 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-22 20:12:58,238 - src.cerebro_ia - ERROR - Error al generar respuesta: Error al generar respuesta: Error code: 401 - {'error': {'message': 'User not found.', 'code': 401}}
+2025-10-22 20:13:34,428 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:13:34,433 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:13:34,433 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:13:40,841 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:13:42,061 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:13:43,203 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:14:57,382 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:14:57,387 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:14:57,388 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:15:01,485 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:15:03,571 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:15:04,513 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:18:00,276 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:18:00,282 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:18:00,282 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:19:25,949 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:19:25,954 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:19:25,954 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:19:34,200 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:19:35,443 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:19:36,805 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:29:10,093 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:29:10,099 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:29:10,099 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:29:14,285 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:29:15,421 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:29:16,158 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:29:42,418 - src.cerebro_ia - INFO - Generando respuesta para: te gusta el pito...
+2025-10-22 20:29:43,272 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:29:44,911 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:30:06,984 - src.cerebro_ia - INFO - Generando respuesta para: dime que pais es el mas caro del mundo...
+2025-10-22 20:30:07,540 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:30:32,736 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:30:32,742 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:30:32,742 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:31:11,200 - src.cerebro_ia - INFO - Generando respuesta para: cuantas especialiades tiene el intistuto ancional ...
+2025-10-22 20:31:13,075 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:31:16,572 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:31:42,844 - src.cerebro_ia - INFO - Generando respuesta para: o que especialidades tiene exactamente...
+2025-10-22 20:31:44,511 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:31:50,140 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:32:15,748 - src.cerebro_ia - INFO - Generando respuesta para: cuál es la capital de francia...
+2025-10-22 20:32:16,561 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:32:17,893 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 07:07:43,815 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 07:07:43,842 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 07:07:43,842 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 07:07:53,843 - src.cerebro_ia - INFO - Generando respuesta para: sexo...
+2025-10-23 07:07:56,168 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 07:08:00,288 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 07:08:36,392 - src.cerebro_ia - INFO - Generando respuesta para: que especialidades tiene el insituto naional tecni...
+2025-10-23 07:08:38,050 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 07:08:43,895 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 07:09:20,669 - src.cerebro_ia - INFO - Generando respuesta para: quie en ozzy...
+2025-10-23 07:09:22,084 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 07:09:24,759 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 07:09:33,725 - src.cerebro_ia - INFO - Generando respuesta para: quien en ozzy...
+2025-10-23 07:09:34,576 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 07:09:41,154 - src.cerebro_ia - INFO - Generando respuesta para: quien en ozzy...
+2025-10-23 07:09:42,165 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 07:11:32,125 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 07:11:32,131 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 07:11:32,131 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 10:06:48,655 - __main__ - ERROR - Dependencias faltantes detectadas
+2025-10-23 10:08:27,031 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 10:08:27,041 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-23 18:43:27,849 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 18:43:27,854 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-23 18:46:25,070 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 18:46:25,072 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 18:46:25,075 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 18:46:25,077 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 18:46:25,077 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 18:46:30,416 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-23 18:46:36,751 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 18:46:37,171 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 18:47:00,318 - src.cerebro_ia - INFO - Generando respuesta para: cuantas especialidades tiene la universidad don bo...
+2025-10-23 18:47:01,048 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 18:47:02,456 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 18:47:20,592 - src.cerebro_ia - INFO - Generando respuesta para: busca en google el clima de hoy en soyapango...
+2025-10-23 18:47:21,207 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 18:47:22,933 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 19:16:36,220 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 19:16:36,223 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 19:16:36,226 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 19:16:36,229 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 19:16:36,229 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 19:16:54,215 - src.habilidades_web - INFO - Abriendo google: https://www.google.com
+2025-10-23 19:17:14,114 - src.habilidades_web - INFO - Abriendo youtube: https://www.youtube.com
+2025-10-23 19:33:19,715 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 19:33:19,717 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 19:33:19,720 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 19:33:19,722 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 19:33:19,723 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 19:33:19,862 - __main__ - ERROR - Error fatal: name 'self' is not defined
+Traceback (most recent call last):
+  File "/home/doki/Descargas/AuroraBot-main/run.py", line 202, in main
+    modo_interfaz()
+  File "/home/doki/Descargas/AuroraBot-main/run.py", line 113, in modo_interfaz
+    from src.interfaz import main
+  File "/home/doki/Descargas/AuroraBot-main/src/interfaz.py", line 809, in <module>
+    class AuroraWindow(QWidget):
+  File "/home/doki/Descargas/AuroraBot-main/src/interfaz.py", line 855, in AuroraWindow
+    if not self.floating_voice_widget:
+           ^^^^
+NameError: name 'self' is not defined
+2025-10-23 19:40:58,560 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 19:40:58,568 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 19:40:58,571 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 19:40:58,573 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 19:40:58,573 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 19:51:02,155 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 19:51:02,157 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 19:51:02,160 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 19:51:02,163 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 19:51:02,164 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 19:54:26,192 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 19:54:26,193 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 19:54:26,197 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 19:54:26,199 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 19:54:26,200 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:03:05,095 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:03:05,103 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:03:05,106 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:03:05,108 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:03:05,108 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:03:24,211 - src.habilidades_web - INFO - Abriendo youtube: https://www.youtube.com
+2025-10-23 20:06:27,149 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:06:27,151 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:06:27,155 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:06:27,157 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:06:27,157 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:06:55,862 - src.habilidades_web - INFO - Abriendo youtube: https://www.youtube.com
+2025-10-23 20:16:22,655 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:16:22,657 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:16:22,660 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:16:22,663 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:16:22,663 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:16:45,134 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:16:45,136 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:16:45,140 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:16:45,143 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:16:45,143 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:17:44,719 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:17:44,721 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:17:44,724 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:17:44,726 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:17:44,727 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:22:23,289 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:22:23,291 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:22:23,294 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:22:23,297 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:22:23,297 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:22:23,739 - __main__ - ERROR - Error fatal: name 'titulo' is not defined
+Traceback (most recent call last):
+  File "/home/doki/Descargas/AuroraBot-main/run.py", line 202, in main
+    modo_interfaz()
+  File "/home/doki/Descargas/AuroraBot-main/run.py", line 114, in modo_interfaz
+    main()
+  File "/home/doki/Descargas/AuroraBot-main/src/interfaz.py", line 1412, in main
+    ventana = AuroraWindow()
+              ^^^^^^^^^^^^^^
+  File "/home/doki/Descargas/AuroraBot-main/src/interfaz.py", line 835, in __init__
+    self.mostrar_selector_modo()
+  File "/home/doki/Descargas/AuroraBot-main/src/interfaz.py", line 967, in mostrar_selector_modo
+    layout.addWidget(titulo)
+                     ^^^^^^
+NameError: name 'titulo' is not defined
+2025-10-23 20:22:57,450 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:22:57,451 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:22:57,454 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:22:57,457 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:22:57,457 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:23:38,019 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:23:38,020 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:23:38,025 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:23:38,027 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:23:38,028 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:24:16,431 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:24:16,433 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:24:16,435 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:24:16,437 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:24:16,437 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:27:58,636 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:27:58,639 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:27:58,643 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:27:58,646 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:27:58,646 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:36:26,115 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:36:26,118 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:36:26,121 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:36:26,123 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:36:26,124 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:37:16,658 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:37:16,659 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:37:16,662 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:37:16,664 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:37:16,665 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:41:50,017 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:41:50,019 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:41:50,022 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:41:50,025 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:41:50,025 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:42:14,155 - src.habilidades_web - INFO - Abriendo youtube: https://www.youtube.com
+2025-10-23 20:42:24,464 - src.cerebro_ia - INFO - Generando respuesta para: pero está...
+2025-10-23 20:42:26,090 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 20:42:27,045 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 20:42:42,199 - src.habilidades_web - INFO - Abriendo youtube: https://www.youtube.com
+2025-10-23 20:43:05,939 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:43:05,941 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:43:05,944 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:43:05,947 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:43:05,948 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:43:22,949 - src.habilidades_web - INFO - Abriendo youtube: https://www.youtube.com
+2025-10-23 20:43:55,718 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:43:55,720 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:43:55,723 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:43:55,726 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:43:55,726 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:44:58,981 - src.cerebro_ia - INFO - Generando respuesta para: cual es la peor cancion de bad bunny segun critica...
+2025-10-23 20:45:00,199 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 20:45:01,765 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 20:45:15,285 - src.cerebro_ia - INFO - Generando respuesta para: y la mejor?...
+2025-10-23 20:45:16,788 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 20:45:19,124 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 20:45:41,478 - src.cerebro_ia - INFO - Generando respuesta para: la mejor cancion de bad bunny segun criticas?...
+2025-10-23 20:45:42,080 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 20:45:44,846 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 20:56:33,335 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:56:33,337 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:56:33,340 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:56:33,343 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:56:33,343 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:56:53,861 - src.habilidades_web - INFO - Abriendo youtube: https://www.youtube.com
+2025-10-23 20:58:33,818 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 20:58:33,820 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:58:33,824 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-23 20:58:33,827 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 20:58:33,827 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 20:58:48,443 - src.habilidades_web - INFO - Abriendo youtube: https://www.youtube.com
+2025-10-24 07:16:04,542 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 07:16:04,544 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:16:04,547 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:16:04,549 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-24 07:16:04,550 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 07:17:29,080 - src.cerebro_ia - INFO - Generando respuesta para: en el micrófono sí sí se abre el micrófono este...
+2025-10-24 07:17:31,069 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-24 07:17:32,026 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-24 07:18:06,284 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 07:18:06,286 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:18:06,289 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:18:06,292 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-24 07:18:06,292 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 07:21:25,732 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 07:21:25,735 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:21:25,738 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:21:25,740 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-24 07:21:25,741 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 07:21:55,002 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 07:21:55,004 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:21:55,007 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:21:55,009 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-24 07:21:55,009 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 07:22:59,763 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 07:22:59,764 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:22:59,767 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:22:59,770 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-24 07:22:59,770 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 07:28:24,642 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 07:28:24,643 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:28:24,646 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 07:28:24,649 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-24 07:28:24,649 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 08:38:35,736 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 08:38:35,738 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 08:38:35,741 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 08:38:35,743 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-24 08:38:35,744 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 08:38:49,985 - src.cerebro_ia - INFO - Generando respuesta para: holii...
+2025-10-24 08:38:51,646 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-24 08:38:52,460 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-24 08:42:40,600 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 08:42:40,601 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 08:42:40,604 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+2025-10-24 08:42:40,606 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-24 08:42:40,606 - __main__ - INFO - Iniciando interfaz gráfica
