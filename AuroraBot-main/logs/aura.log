@@ -356,3 +356,54 @@ NameError: name 'titulo' is not defined
 2025-10-24 08:42:40,604 - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
 2025-10-24 08:42:40,606 - __main__ - INFO - ✅ Configuración de API verificada
 2025-10-24 08:42:40,606 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 21:31:33,218 - __main__ - ERROR - Dependencias faltantes detectadas
+2025-10-24 21:32:11,923 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 21:32:11,926 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 21:39:19,234 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 21:39:19,237 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 21:39:20,184 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 21:42:43,028 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 21:42:43,032 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 21:42:44,001 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 21:54:12,077 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 21:54:12,078 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 21:54:13,501 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 21:56:30,895 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 21:56:30,899 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 21:56:32,175 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 21:56:32,351 - __main__ - ERROR - Error fatal: No module named 'PyQt5'
+Traceback (most recent call last):
+  File "/home/sigaran/Documentos/david/mochila/AuroraBot-main/run.py", line 202, in main
+    modo_interfaz()
+  File "/home/sigaran/Documentos/david/mochila/AuroraBot-main/run.py", line 113, in modo_interfaz
+    from src.interfaz import main
+  File "/home/sigaran/Documentos/david/mochila/AuroraBot-main/src/interfaz.py", line 15, in <module>
+    from src.floating_assistant import FloatingVoiceWidget
+  File "/home/sigaran/Documentos/david/mochila/AuroraBot-main/src/floating_assistant.py", line 9, in <module>
+    from PyQt5.QtGui import QPixmap, QPainter, QColor, QRadialGradient, QCursor, QFont
+ModuleNotFoundError: No module named 'PyQt5'
+2025-10-24 21:57:06,355 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 21:57:06,357 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 21:57:07,017 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 21:58:49,395 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 21:58:49,399 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 21:58:50,686 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 22:00:34,168 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 22:00:34,171 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 22:00:36,022 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 22:01:03,957 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 22:01:03,960 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 22:01:05,221 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 22:02:57,120 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 22:02:57,123 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 22:02:59,053 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 22:13:18,755 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 22:13:18,758 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 22:13:21,396 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 22:32:33,471 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 22:32:33,472 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 22:32:34,882 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 22:40:21,725 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-24 22:40:21,728 - __main__ - WARNING - API de OpenRouter no configurada
+2025-10-24 22:43:51,078 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-24 22:44:00,640 - src.cerebro_ia - WARNING - API de OpenRouter no configurada

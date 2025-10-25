@@ -1,0 +1,18 @@
+vie 24 oct 2025 10:03:42 CST
+
+#Cambios echos en 
+├── run.py
+├── src
+│   ├── floating_assistant.py
+│   ├── interfaz.py
+
+
+
+#PROBLEMA:
+En la clase class FloatingVoiceWidget(QWidget) LINEA 89: Habia un metodo que el gestor de ventana de cinamon (muffin) interpreta que tu ventana prinipal es independiente al widget, cosa que al ejecutarse en Debian con kde es diferente ya que kwin que es el gestor de ventanas  de kde interpte que tu widget y tu run.py son una sola ventana por lo tanto no lo lanza 
+
+#SOLUCION:
+Se debe eliminar el metodo que de esa clase LINEA 97 comentada, donde corregi de QtCore.Property (para la animación de cina) ha Qt.WindowType.SplashScreen (para KWin/KDE), ya que el nuevo metodo Qt.WindowType.SplashScreen lo interpreta tanto muffin como kwin 
+
+By Sigarán
+vie 24 oct 2025 23:11:27 CST
