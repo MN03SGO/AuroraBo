@@ -5,7 +5,7 @@ Burbuja persistente que escucha al hacer click
 import time
 import threading
 from PySide6.QtGui import QPixmap
-from PySide6.QtCore import Qt, QTimer, QPoint, QPropertyAnimation, QEasingCurve, Signal, QThread
+from PySide6.QtCore import Qt, QTimer, QPoint, QPropertyAnimation, QEasingCurve, Signal, QThread, Property
 from PySide6.QtGui import QPainter, QColor, QRadialGradient, QCursor, QFont
 from PySide6.QtWidgets import QWidget, QApplication, QLabel, QVBoxLayout
 
@@ -92,14 +92,17 @@ class FloatingVoiceWidget(QWidget):
     restore_window = Signal()  # Señal para restaurar ventana principal
     
     def __init__(self, parent=None):
-        super().__init__(
-            parent,
+        super().__init__(parent)
+        
+        # Configurar flags de ventana - CRÍTICO para Debian/X11
+        self.setWindowFlags(
             Qt.WindowType.Tool |
             Qt.WindowType.FramelessWindowHint |
-            Qt.WindowType.WindowStaysOnTopHint
+            Qt.WindowType.WindowStaysOnTopHint |
+            Qt.WindowType.X11BypassWindowManagerHint  # ← Esencial para Debian
         )
 
-        # ⬇️ Agrega estas líneas justo aquí
+        # Atributos de transparencia
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setAttribute(Qt.WidgetAttribute.WA_NoSystemBackground, True)
         self.setAutoFillBackground(False)
@@ -108,7 +111,7 @@ class FloatingVoiceWidget(QWidget):
         self.is_listening = False
         self.is_processing = False
         self.color_phase = 0.0
-        self.pulse_scale = 1.0
+        self._pulse_scale = 1.0  # ← Cambiado de self.pulse_scale a self._pulse_scale
         self.dragging = False
         self.offset = QPoint()
         
@@ -118,7 +121,6 @@ class FloatingVoiceWidget(QWidget):
         
         # Configuración
         self.setFixedSize(80, 80)
-        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         
         # Tooltip
@@ -130,7 +132,7 @@ class FloatingVoiceWidget(QWidget):
         self.color_timer.start(30)
         
         # Animación de pulso (solo cuando escucha)
-        self.pulse_animation = QPropertyAnimation(self, b"pulse_value")
+        self.pulse_animation = QPropertyAnimation(self, b"pulseScale")  # ← Cambiado a pulseScale
         self.pulse_animation.setDuration(800)
         self.pulse_animation.setStartValue(0.9)
         self.pulse_animation.setEndValue(1.15)
@@ -144,9 +146,20 @@ class FloatingVoiceWidget(QWidget):
         self.status_label = None
         self.create_status_label()
     
+    # ============== PROPIEDAD ANIMABLE ==============
+    def getPulseScale(self):
+        return self._pulse_scale
+    
+    def setPulseScale(self, value):
+        self._pulse_scale = value
+        self.update()
+    
+    # Propiedad Qt para animación
+    pulseScale = Property(float, getPulseScale, setPulseScale)
+    
     def position_at_corner(self):
         """Posiciona el widget en la esquina inferior derecha"""
-        screen = QApplication.primaryScreen().geometry()
+        screen = QApplication.primaryScreen().availableGeometry()  # ← Cambiado a availableGeometry()
         x = screen.width() - self.width() - 20
         y = screen.height() - self.height() - 80
         self.move(x, y)
@@ -189,42 +202,27 @@ class FloatingVoiceWidget(QWidget):
     def update_colors(self):
         """Actualiza la fase de color para animación"""
         if self.is_listening:
-            # Animación más rápida cuando escucha
             self.color_phase = (self.color_phase + 0.03) % 1.0
         else:
-            # Animación normal
             self.color_phase = (self.color_phase + 0.015) % 1.0
         self.update()
-    
-    def get_pulse_value(self):
-        return self.pulse_scale
-    
-    def set_pulse_value(self, value):
-        self.pulse_scale = value
-        self.update()
-    
-    pulse_value = property(get_pulse_value, set_pulse_value)
     
     def paintEvent(self, event):
         """Dibuja el widget con animación"""
         painter = QPainter(self)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
         
-        
         import math
         phase = self.color_phase * 2 * math.pi
         
         # Colores según estado
         if self.is_listening:
-            # Animación rápida cyan → magenta cuando escucha
             r = int(0 + (191 - 0) * abs(math.sin(phase * 2)))
             g = int(217 + (0 - 217) * abs(math.sin(phase * 2)))
             b = 255
         elif self.is_processing:
-            # Magenta fijo cuando procesa
             r, g, b = 191, 0, 255
         else:
-            # Animación suave normal
             if self.color_phase < 0.33:
                 t = self.color_phase / 0.33
                 r = int(255 + (0 - 255) * t)
@@ -242,7 +240,7 @@ class FloatingVoiceWidget(QWidget):
                 b = int(255 + (128 - 255) * t)
         
         # Aplicar escala de pulso
-        scale = self.pulse_scale if self.is_listening else 1.0
+        scale = self._pulse_scale if self.is_listening else 1.0
         size = min(self.width(), self.height()) * scale * 0.85
         x = (self.width() - size) / 2
         y = (self.height() - size) / 2
@@ -258,24 +256,24 @@ class FloatingVoiceWidget(QWidget):
         painter.setPen(Qt.PenStyle.NoPen)
         painter.drawEllipse(int(x), int(y), int(size), int(size))
         
-        # Dibujar letra "A" o ícono de micrófono
+        # Dibujar logo o ícono
+        logo = None
         painter.setPen(QColor('white'))
         if self.is_listening:
-           painter.setFont(QFont("Segoe UI", 24, QFont.Weight.Bold))
-           painter.setPen(QColor('white'))
-           painter.drawText(self.rect(), Qt.AlignmentFlag.AlignCenter, "🎤")
+            painter.setFont(QFont("Segoe UI", 24, QFont.Weight.Bold))
+            painter.drawText(self.rect(), Qt.AlignmentFlag.AlignCenter, "🎤")
         elif self.is_processing:
-           painter.setFont(QFont("Segoe UI", 20, QFont.Weight.Bold))
-           painter.setPen(QColor('white'))
-           painter.drawText(self.rect(), Qt.AlignmentFlag.AlignCenter, "⚙️")
+            painter.setFont(QFont("Segoe UI", 20, QFont.Weight.Bold))
+            painter.drawText(self.rect(), Qt.AlignmentFlag.AlignCenter, "⚙️")
         else:
-           logo = QPixmap("assets/aurowhite.png")
-        if not logo.isNull():
-           size = int(self.width() * 0.5)
-           logo = logo.scaled(size, size, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
-           x = (self.width() - logo.width()) // 2
-           y = (self.height() - logo.height()) // 2
-           painter.drawPixmap(x, y, logo)
+            logo = QPixmap("assets/aurowhite.png")
+        
+        if logo and not logo.isNull():
+            size_img = int(self.width() * 0.5)
+            logo = logo.scaled(size_img, size_img, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
+            x_img = (self.width() - logo.width()) // 2
+            y_img = (self.height() - logo.height()) // 2
+            painter.drawPixmap(x_img, y_img, logo)
 
         # Anillo exterior cuando escucha
         if self.is_listening:
@@ -318,7 +316,6 @@ class FloatingVoiceWidget(QWidget):
         if self.is_listening or self.is_processing:
             return
         
-        # Iniciar escucha
         self.start_listening()
     
     def start_listening(self):
@@ -328,9 +325,8 @@ class FloatingVoiceWidget(QWidget):
         
         self.is_listening = True
         self.pulse_animation.start()
-        self.show_status("🎤 Escuchando...", 0)  # Sin timeout
+        self.show_status("🎤 Escuchando...", 0)
         
-        # Crear worker para escuchar
         self.listen_worker = ListenWorker()
         self.listen_worker.command_received.connect(self.on_command_received)
         self.listen_worker.status_changed.connect(self.show_status)
@@ -341,7 +337,7 @@ class FloatingVoiceWidget(QWidget):
         """Detiene la animación de escucha"""
         self.is_listening = False
         self.pulse_animation.stop()
-        self.pulse_scale = 1.0
+        self._pulse_scale = 1.0
         self.update()
     
     def on_command_received(self, comando):
@@ -350,10 +346,8 @@ class FloatingVoiceWidget(QWidget):
             self.show_status("⚠️ No te escuché", 2000)
             return
         
-        # Mostrar comando
         self.show_status(f"💭 {comando[:30]}...", 2000)
         
-        # Procesar comando
         self.is_processing = True
         
         self.process_worker = ProcessWorker(comando)
@@ -364,15 +358,12 @@ class FloatingVoiceWidget(QWidget):
     
     def on_response_ready(self, respuesta):
         """Cuando la respuesta está lista"""
-        # La respuesta ya se habla en el worker
         pass
     
     def on_processing_finished(self):
         """Cuando termina el procesamiento"""
         self.is_processing = False
         self.update()
-        
-        # Esperar un poco y volver al estado normal
         QTimer.singleShot(2000, lambda: self.show_status("", 0))
     
     def cleanup(self):
@@ -411,7 +402,7 @@ if __name__ == "__main__":
     
     print("✅ Widget flotante iniciado")
     print("   • Click: Activar voz")
-    print("   • Doble click: Restaurar ventana (simula)")
+    print("   • Doble click: Restaurar ventana")
     print("   • Arrastrar: Mover widget")
     
     sys.exit(app.exec())

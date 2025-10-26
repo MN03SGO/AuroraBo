@@ -1,0 +1,23 @@
+
+#vie 24 oct 2025 23:14:49 CST
+#David
+#Este se crea para ignorar los archivos basura como lo es pycache
+# Archivos de Python
+__pycache__/
+*.pyc
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Archivos temporales o de swap
+*.swp
+*.swo
+*.kate-swp
+
+# Logs
+logs/
+*.log
+
+# Archivos temporales
+temp_audio.mp3
